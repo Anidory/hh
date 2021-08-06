@@ -1,0 +1,317 @@
+@charset "utf-8";
+/* CSS Document */
+  body
+{background: url(../images/pexels-elianne-dipp-4666754.png)}
+
+	.container
+	   {width:1520px;
+	    height:1930px; }
+
+	 .signin a
+	   {text-decoration: none;
+		list-style: none;
+        color:white;
+	    float: right;
+		margin: 0px 50px 5px 20px ;
+		padding: 15px 15px 15px 15px;
+        position: relative;
+        background-color: white;
+		color: black; }
+
+     .signin a:hover
+		{box-sizing: border-box;
+         background-color: #FABE1E;
+         color: black;}
+	  
+      
+	  .header
+	     {width: auto;
+		 height: 60px;}
+	    
+	  .logo
+	   {width:60px;
+		height:60px;
+		padding-left: 25px;
+        float:left;    }
+
+	   .header ul
+        {list-style: none;}
+
+	   .header ul li:hover
+		{ box-sizing: border-box;
+         border: 2px solid #FABE1E; }
+	  
+  
+       .header ul li 
+		{padding: 20px 40px 20px 40px;
+		 box-sizing: border-box;
+		 float: left;
+		 position: relative;}
+		
+       .header ul li a
+		{text-decoration: none;
+		 color: white;}
+	   
+	    .header ul li ul
+		{position: absolute;
+		 top: 58px;
+		 left:-41px;
+		 visibility: hidden;}
+
+        .header ul li ul li
+		{ width: 133px; 
+          border-bottom: #FABE1E;}
+	   
+	    .header ul li:hover ul
+		{visibility: visible;}
+
+	    .inforbox
+	   {width: 600px;
+	    height: 400px;
+		margin: 70px;
+	    padding: 60px;
+		align-items: center;
+        box-sizing: border-box;
+        position: relative;}
+
+	   
+	   .link
+	   {width: 200px;
+	    height: 50px;}
+
+       .link a 
+        {text-decoration: none;
+         padding: 20px;
+		 box-sizing: border-box;
+		 float: left;
+		 position: relative;
+         color: aliceblue;}
+
+	   .link a:hover
+		{ box-sizing: border-box;
+         border: 2px solid #FABE1E; }
+
+	   .inforbox2
+	   {width: 1400px;
+	    height: 700px;
+		margin: auto;
+		padding: 10px;
+		align-content: center;
+		text-align: center;
+        background-color: }
+	   
+	   .chuahinh
+	   {width: 1400px;
+	    height: 400px;
+        background-color: }
+
+	figure {
+   width: 350px;
+        height: 400px;
+        float:left;
+		margin: 55px;
+    -webkit-transform: perspective(500);
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: .5s;
+}
+figure:hover {
+    -webkit-transform: perspective(500) rotateX(90deg) translateY(-3em) translateZ(3em);
+}
+img {
+    background-color: #222;
+    box-shadow: 0 20px 15px -10px hsla(0,0%,0%,.25);
+    display: block;
+    height: 100%;
+    -webkit-transition: .5s;
+	backface-visibility: hidden;}
+
+figure:hover img {
+    box-shadow: none;}
+
+figcaption {
+    font-size: 10px;
+	text-align: center;
+    color: #fff;
+    padding: 10px;
+   transform: rotateX(-90deg);
+    transform-origin: 100% 0;
+    transition: 0.5s;
+}
+figure:hover figcaption {
+    box-shadow: 0 20px 15px -10px hsla(0,0%,0%,.25);
+}
+	
+	   .link2 a
+	   {text-decoration: none;
+		list-style: none;
+        color:#FABE1E;
+		padding: 10px;
+	    box-sizing: border-box;
+        position: relative;}
+
+	   .link2 a:hover
+		{ box-sizing: border-box;
+         border: 2px solid #FABE1E; }
+
+       .footer
+       {width: 1450px;
+		height: 100px;
+        color: white;
+	    background-color:;
+        text-align: center;
+		padding:0px;
+        margin: 300px 20px 0 -20px;}
+      
+.searching
+{
+  font-family:'Roboto';
+  width:200px; 
+	height: 50px;
+  margin: 0px 580px; 
+
+  padding:60px 20px 0px;
+}
+h2     { 
+  text-align:center; 
+  margin-bottom:50px; 
+}
+h2 small { 
+  font-weight:normal; 
+  color:#D5D5D5; }
+
+.footer   { text-align:center; }
+.footer a  { color:#FABE1E }
+
+/* form starting stylings ------------------------------- */
+.group        { 
+  position:relative; 
+  margin-bottom:45px; 
+}
+input         {
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+input:focus     { outline:none; }
+
+/* LABEL ======================================= */
+label          {
+  color:#999; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label    {
+  top:-20px;
+  font-size:14px;
+  color:#5264AE;
+}
+
+/* BOTTOM BARS ================================= */
+.bar  { position:relative; display:block; width:300px; }
+.bar:before, .bar:after   {
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+   background:#5264AE;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+  from { background:#564AE; }
+  to  { width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+  from { background:#5264AE; }
+  to  { width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+  from { background:#5264AE; }
+  to  { width:0; background:transparent; }
+}
+       .footer ul
+        {list-style: none;
+         box-sizing: border-box;}
+
+	   .footer ul li:hover
+		{ border: 2px solid black; }
+	  
+       .footer ul li 
+		{padding: 10px 80px 10px 90px;
+		 float: left;
+		 position: relative;}
+		
+       .footer ul li a
+		{text-decoration: none;
+		 color: white;}
+
+       .footer ul li ul
+		{position: absolute;
+		text-align: right;
+		 top: -80px;
+		 left:-60px;
+		 visibility: hidden;}
+
+        .footer ul li ul li
+		{ padding: 30px;
+          color: }
+	   
+	    .footer ul li:hover ul
+		{visibility: visible;}
+
+.footer_box
+ {width: 1510px;
+  height: 50px;
+  background-color:black;
+padding:10px 0px 3 0;;
+clear: both;
+ margin: 0px -70px 0 0}
+
+
+	
+	
